@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    password: ${SPRING_DATASOURCE_USERNAME}
+    username: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  jackson:
+    property-naming-strategy: SNAKE_CASE
